@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chris Turner</title>
+    <link>https://demo.nurlan.co/themes/hugo-sustain/categories/projects/index.xml</link>
+    <description>Recent content on Chris Turner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <atom:link href="https://demo.nurlan.co/themes/hugo-sustain/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Projects</title>
+      <link>https://demo.nurlan.co/themes/hugo-sustain/projects/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>https://demo.nurlan.co/themes/hugo-sustain/projects/</guid>
+      <description>&lt;section id=&#34;projects&#34;&gt;
+  &lt;div class=&#34;container&#34;&gt;
+    &lt;h3&gt;Projects&lt;/h3&gt;
+    &lt;div class=&#34;panel panel-default&#34;&gt;
+      &lt;div class=&#34;panel-body&#34;&gt;
+      &lt;h5&gt;
+        &lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;#&#34;&gt;Project 1&lt;/a&gt;&lt;/strong&gt;
+        - Ei viderer tacimates pro, quem assum ea nam. Veritus omnesque eam te. Et natum mucius tamquam vel,
+        ea dolorem volumus deterruisset nec. Graeci mentitum sea an, eu prima elaboraret est.
+      &lt;/h5&gt;
+      &lt;h5&gt;
+        &lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;#&#34;&gt;Project 2&lt;/a&gt;&lt;/strong&gt;
+        - An eripuit phaedrum qui, nec facer splendide ex, vel ea assum facilisi convenire.
+        Te his neglegentur consectetuer.
+      &lt;/h5&gt;
+        &lt;h5&gt;
+        &lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;#&#34;&gt;Project 3&lt;/a&gt;&lt;/strong&gt;
+        - An alii quot tantas eum, doming platonem persecuti mea et, vim perpetua cotidieque delicatissimi in.
+      &lt;/h5&gt;
+      &lt;h5&gt;
+        &lt;i class=&#34;fa fa-globe&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;#&#34;&gt;Project 4&lt;/a&gt;&lt;/strong&gt;
+        - Vim an case vidit sententiae, est at euismod laboramus efficiantur. Ei sit brute lorem,
+        ea eam timeam viderer aliquid, cu integre omittam moderatius quo.
+      &lt;/h5&gt;
+      &lt;h5&gt;
+        &lt;i class=&#34;fa fa-globe&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;#&#34;&gt;Project 5&lt;/a&gt;&lt;/strong&gt;
+        - Dicta causae meliore ex vel, in vix erant integre petentium. Vix ei nisl scripta recusabo,
+        eam doming blandit facilisis.
+      &lt;/h5&gt;
+      &lt;h5&gt;
+        &lt;i class=&#34;fa fa-cog&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;#&#34;&gt;Project 6&lt;/a&gt;&lt;/strong&gt;
+        - Inermis recusabo elaboraret mea et, dicat neglegentur vim te. Nec et sanctus scriptorem,
+        usu ex sapientem gubergren. Tamquam admodum ei usu.
+      &lt;/h5&gt;
+      &lt;h5&gt;
+        &lt;i class=&#34;fa fa-cog&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;#&#34;&gt;Project 7&lt;/a&gt;&lt;/strong&gt;
+        - Essent putant indoctum sed in, reprimique persequeris neglegentur te quo. Nam rebum
+        tractatos partiendo at, debet ubique oporteat ut his.
+      &lt;/h5&gt;
+
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

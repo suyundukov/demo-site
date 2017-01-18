@@ -1,0 +1,63 @@
+/* Fonts Section */
+@font-face {
+  font-family: 'FF Kievit Pro';
+  src: url("//f.nurlan.co/f/kiev-pro-book.eot");
+  src: local("FF Kievit Pro Book"), local("FFKievitPro-Book"), url("//f.nurlan.co/f/kiev-pro-book.eot?#iefix") format("embedded-opentype"), url("//f.nurlan.co/f/kiev-pro-book.woff2") format("woff2"), url("//f.nurlan.co/f/kiev-pro-book.woff") format("woff"), url("//f.nurlan.co/f/kiev-pro-book.ttf") format("truetype"), url("//f.nurlan.co/f/kiev-pro-book.svg#kiev-pro-book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General Section */
+html, body {
+  cursor: default;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'FF Kievit Pro';
+  line-height: 1.5rem;
+  color: #fff;
+  background-color: #307FE2;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  text-align: center;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Media Screens Section */
+@media screen and (min-width: 48em) {
+  h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  h1 {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+}
