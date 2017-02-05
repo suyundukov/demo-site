@@ -33,10 +33,6 @@ before_script:
 
 script:
   - npm run build
-  - npm run favicon
-  - npm run sitemap
-  - npm run google
-  - npm run versions
 
 deploy:
   provider: script
