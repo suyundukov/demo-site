@@ -1,0 +1,34 @@
+{
+  "name": "demo-site",
+  "version": "1.0.0",
+  "description": "Repo for some demo sites I built",
+  "repository": {
+    "url": "github.com/nurlansu/demo-site",
+    "type": "git"
+  },
+  "scripts": {
+    "autoprefixer": "postcss -u autoprefixer -c package.json -r ./public/css/*.css",
+    "pug": "pug ./source/pug/*.pug -o ./public/",
+    "pug:debug": "pug ./source/pug/*.pug --pretty -o ./public/",
+    "pug:watch": "pug ./source/pug/*.pug -w -o ./public/",
+    "sass": "wt --includes ./source/sass/includes/ compile ./source/sass/*.sass -b ./public/css/ -s compressed",
+    "sass:watch": "wt --includes ./source/sass/includes/ watch ./source/sass/*.sass -b public/css/ -s compressed",
+    "themes": "cp -r ./source/themes ./public/",
+    "watch": "run-p sass:watch pug:watch",
+    "build": "npm run sass && npm run pug && npm run autoprefixer && npm run themes"
+  },
+  "autoprefixer": {
+    "browsers": "> 1%, last 2 versions, ie >= 9"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "npm-run-all": "^4.0.1",
+    "postcss-cli": "^2.6.0",
+    "pug": "^2.0.0-beta11"
+  },
+  "author": "Nurlan Su",
+  "license": "MIT"
+}

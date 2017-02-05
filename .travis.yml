@@ -1,0 +1,44 @@
+language: go
+
+go:
+  - 1.7.5
+
+env:
+  matrix:
+    - NODE_VERSION=node
+  global:
+    secure: ZG3pLbD1G5Ba3V2ECmwD7gm66b54H6LPaNPA0p1rflAgE9fxULEhupbea1nPe+Tj76Mj66VzoVPuU/D5QrHmW8EoHJWHnvwNgkiIh0r9PUnYQLMQcxLxdhKWUAYldaoRHBZPcamaeYDcEEmjW6PhwLkZQOOuhH/ql5VmhNXWQXKgJ7q4X+jIrPszD7DPUAPh89OjczGQQGxS5DkIMmDnnFPMvZywhnXA2FoUyXeE+EjGg75Ntj3hCzzhpEIIyxsTEITKmiDcYJxocCHYVut+exPncA4fz82J7LmyZbCgQJfcP2HpMABxr0qQuwVovQK11+s9ZUUQoYHhsZuIlO6axWmgx/KwJDv6gIClXb/l5L7RnTpgzNIY2V/M51EOXUICUTKYQcGw5IMvFzeyTn/txqBxc4+wa+5TqgLlFR1/Ozsc7kUUbQyrwoI81eJhRhWXa4oDf8168vXwRuNtF16d3rr4KIUmrlhZMtJUM9+9UxG3vPAROaqeVP2AFkx/NafNaHsQuwvNRc4hW3o7Ac1t4CPF9RDTaqtMm2ARnapPlxnlUXt1XJzyHIweDt3c/MiWH8e2QlLfrfhplk3fSDdeeB6esWCMjfFBPeN+/T+WXgmJOrWKOR3zX7Myk7n8W8HhIa82tNtcvCdHUlH6IkFEJYDWPRQFt6idTHD11frOCNg=
+
+notifications:
+  email:
+    recipients:
+      - mail@nurlan.co
+    on_success: never
+    on_failure: change
+
+before_install:
+  - nvm install $NODE_VERSION
+  - nvm use $NODE_VERSION
+
+install:
+  - go get -u github.com/wellington/wellington/wt
+  - npm i -g npm
+  - npm i -g autoprefixer
+  - npm i -g firebase-tools
+  - npm i -g postcss-cli
+  - npm i -g pug-cli
+
+before_script:
+  - npm install
+
+script:
+  - npm run build
+  - npm run favicon
+  - npm run sitemap
+  - npm run google
+  - npm run versions
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: firebase deploy --token "$FIREBASE_TOKEN"
