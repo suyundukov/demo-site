@@ -22,6 +22,7 @@ before_install:
 
 install:
   - go get -u github.com/wellington/wellington/wt
+  - go get -u -v github.com/spf13/hugo
   - npm i -g npm
   - npm i -g autoprefixer
   - npm i -g firebase-tools
@@ -33,6 +34,8 @@ before_script:
 
 script:
   - npm run build
+  - bash ./source/themes/hugo-sustain/install.sh
+  - bash ./source/themes/hugo-vitae/install.sh
 
 deploy:
   provider: script

@@ -13,9 +13,8 @@
     "pug:watch": "pug ./source/pug/*.pug -w -o ./public/",
     "sass": "wt --includes ./source/sass/includes/ compile ./source/sass/*.sass -b ./public/css/ -s compressed",
     "sass:watch": "wt --includes ./source/sass/includes/ watch ./source/sass/*.sass -b public/css/ -s compressed",
-    "themes": "cp -r ./source/themes ./public/",
     "watch": "run-p sass:watch pug:watch",
-    "build": "npm run sass && npm run pug && npm run autoprefixer && npm run themes"
+    "build": "npm run sass && npm run pug && npm run autoprefixer"
   },
   "autoprefixer": {
     "browsers": "> 1%, last 2 versions, ie >= 9"

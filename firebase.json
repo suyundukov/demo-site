@@ -18,6 +18,15 @@
         "value" : "max-age=86400"
       } ]
     } ],
+    "redirects": [ {
+      "source": "/themes/hugo-sustain",
+      "destination": "/hugo-sustain/",
+      "type": 301
+    }, {
+      "source": "/themes/hugo-vitae",
+      "destination": "/hugo-vitae/",
+      "type": 301
+    } ],
     "cleanUrls": true
   }
 }
