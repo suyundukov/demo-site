@@ -22,20 +22,12 @@ before_install:
 
 install:
   - go get -u github.com/wellington/wellington/wt
-  - go get -u -v github.com/spf13/hugo
-  - npm i -g npm
-  - npm i -g autoprefixer
-  - npm i -g firebase-tools
-  - npm i -g postcss-cli
-  - npm i -g pug-cli
-
-before_script:
+  - go get -u github.com/spf13/hugo
   - npm install
 
 script:
   - npm run build
-  - bash ./source/themes/hugo-sustain/install.sh
-  - bash ./source/themes/hugo-vitae/install.sh
+  - bash ./scripts/install.sh
 
 deploy:
   provider: script

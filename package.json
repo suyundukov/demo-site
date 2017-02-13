@@ -20,13 +20,13 @@
     "browsers": "> 1%, last 2 versions, ie >= 9"
   },
   "dependencies": {
-
+    "firebase-tools": "^3.2.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
     "npm-run-all": "^4.0.1",
     "postcss-cli": "^2.6.0",
-    "pug": "^2.0.0-beta11"
+    "pug-cli": "^1.0.0-alpha6"
   },
   "author": "Nurlan Su",
   "license": "MIT"
