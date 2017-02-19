@@ -1,4 +1,5 @@
 #!/bin/bash
+# Building Hugo themes
 THEMES=(hugo-sustain hugo-vitae)
 for i in "${THEMES[@]}"
 do
@@ -9,3 +10,5 @@ do
   # Building themes
   hugo -s ./source/themes/"$i"
 done
+# Building other .html files
+cp ./source/*.html ./public/

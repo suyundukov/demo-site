@@ -22,12 +22,14 @@ before_install:
 
 install:
   - go get -u github.com/wellington/wellington/wt
+  - go get -u github.com/tdewolff/minify/cmd/minify
   - go get -u github.com/spf13/hugo
   - npm install
 
 script:
   - npm run build
   - bash ./scripts/install.sh
+  - minify -r -o ./public/ --match=\.html ./public/
 
 deploy:
   provider: script

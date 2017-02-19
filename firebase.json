@@ -2,11 +2,13 @@
   "hosting": {
     "public": "public",
     "headers": [ {
-      "source" : "**/*.@(jpg|jpeg|gif|png|eot|otf|ttf|ttc|woff|css|js)",
+      "source" : "**/*.@(jpg|jpeg|png|eot|otf|ttf|ttc|woff|woff2|css|js)",
       "headers" : [ {
         "key" : "Access-Control-Allow-Origin",
         "value" : "*"
-      } ],
+      } ]
+      }, {
+      "source" : "**/*.@(jpg|jpeg|png|eot|otf|ttf|ttc|woff|woff2|css|js)",
       "headers" : [ {
         "key" : "Cache-Control",
         "value" : "max-age=86400"
