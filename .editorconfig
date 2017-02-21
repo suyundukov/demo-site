@@ -10,6 +10,3 @@ trim_trailing_whitespace = true
 
 [*.{json,yml}]
 indent_size = 2
-
-[*.pug]
-trim_trailing_whitespace = false

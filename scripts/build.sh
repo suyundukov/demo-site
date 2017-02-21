@@ -1,4 +1,6 @@
 #!/bin/bash
+# Building main stuff (npm)
+npm run build
 # Building Hugo themes
 THEMES=(hugo-sustain hugo-vitae)
 for i in "${THEMES[@]}"
@@ -10,5 +12,7 @@ do
   # Building themes
   hugo -s ./source/themes/"$i"
 done
-# Building other .html files
+# Building .html files
 cp ./source/*.html ./public/
+# Minifying html files
+minify -r -o ./public/ --match=\.html ./public/

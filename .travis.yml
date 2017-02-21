@@ -27,9 +27,7 @@ install:
   - npm install
 
 script:
-  - npm run build
-  - bash ./scripts/install.sh
-  - minify -r -o ./public/ --match=\.html ./public/
+  - bash ./scripts/build.sh
 
 deploy:
   provider: script
