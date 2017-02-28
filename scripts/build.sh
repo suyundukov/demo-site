@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Building main stuff (npm)
 npm run build
 # Building Hugo themes

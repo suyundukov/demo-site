@@ -27,7 +27,7 @@ install:
   - npm install
 
 script:
-  - bash ./scripts/build.sh
+  - ./scripts/build.sh
 
 deploy:
   provider: script
