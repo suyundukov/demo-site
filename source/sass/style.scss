@@ -1,0 +1,65 @@
+/* Fonts Section */
+@font-face {
+  font-family: 'FF Kievit Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: url('//fonts.nurlan.co/kievit/pro/book.eot');
+  src: local('FF Kievit Pro Book'), local('FFKievitPro-Book'),
+       url('//fonts.nurlan.co/kievit/pro/book.eot?#iefix') format('embedded-opentype'),
+       url('//fonts.nurlan.co/kievit/pro/book.woff2') format('woff2'),
+       url('//fonts.nurlan.co/kievit/pro/book.woff') format('woff'),
+       url('//fonts.nurlan.co/kievit/pro/book.ttf') format('truetype'),
+       url('//fonts.nurlan.co/kievit/pro/book.svg#book') format('svg')
+}
+
+/* General Section */
+html, body {
+  cursor: default;
+  height: 100%;
+  user-select: none
+}
+
+body {
+  margin: 0;
+  font-family: 'FF Kievit Pro';
+  line-height: 1.5rem;
+  color: #fff;
+  background-color: #0080FF
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 0
+}
+
+.table {
+  display: table;
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  text-align: center
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 4rem;
+  padding-bottom: 4rem
+}
+
+/* Media Screens Section */
+@media screen and (min-width: 48em) {
+  h1 {
+    font-size: 4rem;
+    line-height: 5rem
+  }
+}
+
+@media screen and (min-width: 64em) {
+  h1 {
+    font-size: 6rem;
+    line-height: 8rem
+  }
+}
