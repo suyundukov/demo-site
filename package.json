@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "Repo for some demo sites I built",
   "repository": {
-    "url": "github.com/nurlansu/demo-site",
-    "type": "git"
+    "type": "git",
+    "url": "github.com/nurlansu/demo-site"
   },
   "scripts": {
     "autoprefixer": "postcss -u autoprefixer -c package.json -r ./public/css/*.css",
-    "sass": "wt --includes ./source/sass/includes/ compile ./source/sass/*.sass -b ./public/css/ -s compressed",
-    "sass:watch": "wt --includes ./source/sass/includes/ watch ./source/sass/*.sass -b public/css/ -s compressed",
-    "build": "npm run sass && npm run autoprefixer"
+    "sass": "wt compile ./source/sass/ -b ./public/css/ -s compressed",
+    "sass:ci": "node-sass ./source/sass/ -o ./public/css/ --output-style compressed",
+    "sass:watch": "wt watch ./source/sass/ -b ./public/css/ -s compressed",
+    "build": "npm run sass && npm run autoprefixer",
+    "build:ci": "npm run sass:ci && npm run autoprefixer"
   },
   "autoprefixer": {
     "browsers": "> 1%, last 2 versions, ie >= 9"
@@ -20,6 +22,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
+    "node-sass": "^4.5.0",
     "postcss-cli": "^2.6.0"
   },
   "author": "Nurlan Su",

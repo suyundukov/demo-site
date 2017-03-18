@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Building main stuff (npm)
-npm run build
+npm run build:ci
 # Building Hugo themes
 THEMES=(hugo-sustain hugo-vitae)
 for i in "${THEMES[@]}"
